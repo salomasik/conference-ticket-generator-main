@@ -1,0 +1,157 @@
+@import "./variables.scss";
+
+
+.art-ticket{
+    
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    // margin-bottom: 100px;
+@include breakpoint(xs){
+    margin-bottom: 0px;
+}
+
+    .full-name2{
+        background:linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%)); 
+        color:transparent; 
+        -webkit-background-clip:text;
+
+
+    }
+
+    .full-name2{
+    }
+
+    .email-span{
+        color: $Orange-700;
+    }
+}
+
+.ticket{
+    display: none;
+
+    width: 600px;
+    height: 280px;
+    gap: 180px;
+    position: relative;
+    
+    @include breakpoint(xs){
+        width: 350px;
+        height: 170px;
+    }
+
+
+
+    .left-tick{
+        // background-color: rgba(75, 72, 106, .5);
+        display: grid;
+        /* border-bottom-right-radius: 10px; */
+        /* border-top-right-radius: 10px; */
+        padding: 25px;
+        gap: 55px;
+        width: 950px;
+        @include breakpoint(xs){
+            display: grid;
+            padding: 10px;
+            gap: 0px;
+            width: 80px;
+            height: 185px;
+        }
+        .head-ticket{
+            display: flex;
+            gap: 15px;
+            margin-bottom: 50px;
+            @include breakpoint(xs){
+                height: 50px;
+            margin-bottom: 0px;
+
+            }
+
+            
+        }
+        .data-tick{
+            @include breakpoint(xs){
+                width: max-content;
+
+
+            }
+            .data-tick-p{
+                font-size: 28px;
+                color: $Neutral-0;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .data-p{
+                font-size: 14px;
+                color: rgba($Neutral-700,.75);
+
+            }
+        }
+
+        .footer-ticket{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            @include breakpoint(xs){
+                height: 50px;
+                width: max-content;
+
+            }
+            img{
+                height: 80px;
+                width: 80px;
+                border-radius:10px ;
+            }
+            .full-name{
+                font-size: 24px;
+                color: $Neutral-0;
+                margin-bottom: 10px;
+            }
+            .email-p{
+                color: rgba($Neutral-700,.75);
+                font-size: 13;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+            }
+        }
+
+    }
+    .right-tick{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            left: 82%;
+    position: absolute;
+            font-size: 20px;
+            padding: 40px;
+            color: rgba($Neutral-700,.75);
+
+            writing-mode: vertical-rl;
+text-orientation: none;
+
+@include breakpoint(xs){
+    padding: 20px;
+
+}
+
+        }
+        
+    }
+    .svg-ticket{
+        width: 600px;
+        height: 280px;
+        position: absolute;
+        left: 0px;
+        @include breakpoint(xs){
+            width: 350px;
+            height: 170px;
+        }
+    }
+}
